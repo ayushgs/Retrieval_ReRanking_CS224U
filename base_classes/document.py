@@ -12,7 +12,7 @@ class Document:
         self.anchors = None # term -> anchor_count
         self.debugStr = ""
         self.body_content = None # list of ids, map is external
-        self.relevance = 0
+        self.relevance = None
 
     def __iter__(self):
         for u in self.url:
@@ -21,8 +21,7 @@ class Document:
     def __str__(self):
         result = [];
         NEW_LINE = "\n"
-#         result.append("url: "+ self.url + NEW_LINE);
-        if (self.title is not None): result.append("title: " + self.title + NEW_LINE);
+        if (self.title is not None): result.append("title: " + str(self.title) + NEW_LINE);
         if (self.headers is not None): result.append("headers: " + str(self.headers) + NEW_LINE);
         if (self.body_hits is not None): result.append("body_hits: " + str(self.body_hits) + NEW_LINE);
         if (self.body_length != 0): result.append("body_length: " + str(self.body_length) + NEW_LINE);

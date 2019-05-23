@@ -24,7 +24,7 @@ def load_train_data(feature_file_name):
     line = None
     url = None
     anchor_text = None
-    query = None # Qurey
+    query = None # Query
     query_dict = {} #feature dictionary: Query -> (url -> Document)
 
     # Tokenization
