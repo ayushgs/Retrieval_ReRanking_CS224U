@@ -1,0 +1,129 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+.ipynb_checkpoints*
+
+
+# Data
+data/*
+trees/*
+glove.6B/*
+vsmdata/*
+snli_1.0/*
+nli-data/*
+nlidata/*
+rel_ext_data*
+*_solved.ipynb
+
+# 224U files
+numpy_tutorial.ipynb
+old_doc_id_content.p
+old_hw1.ipynb
+old_hw2.ipynb
+old_hw4.ipynb
+old_vocab_dict.p
+old_vocab_frequency.p
+old_vocab_id_list.p
+project_data/
+rel_ext.py
+rel_ext_01_task.ipynb
+rel_ext_02_experiments.ipynb
+requirements.txt
+setup.ipynb
+sippycup/
+sst.py
+sst_01_overview.ipynb
+sst_02_hand_built_features.ipynb
+sst_03_neural_networks.ipynb
+test/
+tf_autoencoder.py
+tf_model_base.py
+tf_rnn_classifier.py
+tf_shallow_neural_classifier.py
+torch_autoencoder.py
+torch_model_base.py
+torch_rnn_classifier.py
+torch_shallow_neural_classifier.py
+torch_subtree_nn.py
+torch_tree_nn.py
+tutorial_pytorch.ipynb
+vsm.py
+vsm_01_distributional.ipynb
+vsm_02_dimreduce.ipynb
+vsm_03_retrofitting.ipynb
+LICENSE
+__MACOSX/
+bakeoff1-wordsim-test-data.zip
+bakeoff4-wordentail-data.zip
+contextualreps.ipynb
+evaluation_methods.ipynb
+evaluation_metrics.ipynb
+fig/
+hw1_wordsim.ipynb
+hw2_sst.ipynb
+hw3_rel_ext.ipynb
+hw4_wordentail.ipynb
+jupyter_notebook_tutorial.ipynb
+nli.py
+nli_01_task_and_data.ipynb
+nli_02_models.ipynb
+nltk_data/
+np_autoencoder.py
+np_model_base.py
+np_rnn_classifier.py
+np_sgd_classifier.py
+np_shallow_neural_classifier.py
+np_tree_nn.py
+retrofitting.py
