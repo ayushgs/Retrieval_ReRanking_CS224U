@@ -4,8 +4,10 @@ from scrapy.crawler import CrawlerProcess
 from bs4 import BeautifulSoup
 
 # read in the doc urls
-doc_id_list = pickle.load(open("doc_id_list.p", "rb"))
-doc_dict = pickle.load(open("doc_dict.p", "rb"))
+prefix = 'dev' # could also change to train
+
+doc_id_list = pickle.load(open("{}_doc_id_list.p".format(prefix), "rb"))
+doc_dict = pickle.load(open("{}_doc_dict.p".format(prefix), "rb"))
 assert len(doc_id_list) > 0
 assert len(doc_dict) > 0
 
@@ -60,9 +62,9 @@ process.crawl(DocumentSpider)
 process.start() # the script will block here until the crawling is finished
 
 # save the data!
-pickle.dump(doc_id_content, open("doc_id_content.p", "wb" ))
-pickle.dump(vocab_dict, open("vocab_dict.p", "wb" ))
-pickle.dump(vocab_id_list, open("vocab_id_list.p", "wb" ))
-pickle.dump(vocab_frequency, open("vocab_frequency.p", "wb" ))
+pickle.dump(doc_id_content, open("{}_doc_id_content.p".format(prefix), "wb" ))
+pickle.dump(vocab_dict, open("{}_vocab_dict.p".format(prefix), "wb" ))
+pickle.dump(vocab_id_list, open("{}_vocab_id_list.p".format(prefix), "wb" ))
+pickle.dump(vocab_frequency, open("{}_vocab_frequency.p".format(prefix), "wb" ))
 print("Parse failures:", parse_failures)
 
